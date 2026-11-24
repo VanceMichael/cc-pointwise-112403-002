@@ -1,25 +1,121 @@
 {
-  "name": "流通生产资料报价口径与市场覆盖采集器",
+  "name": "生产资料报价观测的覆盖与到报核验",
   "material_nature": "本地合成演练资料",
-  "description": "仅供本地开发和回归，记录不代表真实机构、交易或观测。",
-  "records": {
-    "release": "circulation-midmonth",
-    "period": "2026-11-mid",
-    "products": [
-      {
-        "code": "steel-wire",
-        "grade": "Q235",
-        "unit": "ton",
-        "state": "quoted"
-      },
-      {
-        "code": "coal-coking",
-        "grade": "cleaned",
-        "unit": "ton",
-        "state": "not-listed"
-      }
-    ],
-    "revision": 2,
-    "notes": "合成价格发布目录，缺项不表示零报价。"
-  }
+  "description": "资料中的机构、项目、交易、合同和回执均为虚构，仅用于本地开发与回归。",
+  "feeds": [
+    {
+      "id": "coverage",
+      "label": "监测点目录",
+      "records": [
+        {
+          "point": "华北-钢材",
+          "product": "线材",
+          "grade": "Q235",
+          "market": "批发",
+          "period": "2026-11-mid",
+          "included": "yes"
+        },
+        {
+          "point": "华北-钢材",
+          "product": "线材",
+          "grade": "HPB300",
+          "market": "批发",
+          "period": "2026-11-mid",
+          "included": "yes"
+        },
+        {
+          "point": "华东-煤炭",
+          "product": "炼焦煤",
+          "grade": "洗精煤",
+          "market": "集散地",
+          "period": "2026-11-mid",
+          "included": "yes"
+        },
+        {
+          "point": "华南-水泥",
+          "product": "普通硅酸盐水泥",
+          "grade": "P.O 42.5",
+          "market": "出厂",
+          "period": "2026-11-mid",
+          "included": "yes"
+        }
+      ]
+    },
+    {
+      "id": "quotes",
+      "label": "分点位报价页",
+      "records": [
+        {
+          "point": "华北-钢材",
+          "product": "线材",
+          "grade": "Q235",
+          "market": "批发",
+          "unit": "元/吨",
+          "period": "2026-11-mid",
+          "value": "3520",
+          "state": "quoted"
+        },
+        {
+          "point": "华北-钢材",
+          "product": "线材",
+          "grade": "HPB300",
+          "market": "批发",
+          "unit": "元/吨",
+          "period": "2026-11-mid",
+          "value": "3580",
+          "state": "quoted"
+        },
+        {
+          "point": "华东-煤炭",
+          "product": "炼焦煤",
+          "grade": "洗精煤",
+          "market": "集散地",
+          "unit": "元/吨",
+          "period": "2026-11-mid",
+          "value": "1420",
+          "state": "quoted"
+        },
+        {
+          "point": "华南-水泥",
+          "product": "普通硅酸盐水泥",
+          "grade": "P.O 42.5",
+          "unit": "元/吨",
+          "period": "2026-11-mid",
+          "value": null,
+          "state": "not-reported"
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "label": "历史发布与观察单",
+      "records": [
+        {
+          "point": "华北-钢材",
+          "product": "线材",
+          "grade": "Q235",
+          "market": "批发",
+          "unit": "元/吨",
+          "period": "2026-11-early",
+          "value": "3490",
+          "state": "quoted"
+        },
+        {
+          "point": "华南-水泥",
+          "product": "普通硅酸盐水泥",
+          "grade": "P.O 42.5",
+          "unit": "元/吨",
+          "period": "2026-11-early",
+          "value": "410",
+          "state": "quoted"
+        },
+        {
+          "observation": "采购观察-11B",
+          "product": "线材/Q235/华北",
+          "source_period": "2026-11-early..mid",
+          "state": "reviewed"
+        }
+      ]
+    }
+  ]
 }
