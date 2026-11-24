@@ -1,0 +1,25 @@
+{
+  "name": "流通生产资料报价口径与市场覆盖采集器",
+  "material_nature": "本地合成演练资料",
+  "description": "仅供本地开发和回归，记录不代表真实机构、交易或观测。",
+  "records": {
+    "release": "circulation-midmonth",
+    "period": "2026-11-mid",
+    "products": [
+      {
+        "code": "steel-wire",
+        "grade": "Q235",
+        "unit": "ton",
+        "state": "quoted"
+      },
+      {
+        "code": "coal-coking",
+        "grade": "cleaned",
+        "unit": "ton",
+        "state": "not-listed"
+      }
+    ],
+    "revision": 2,
+    "notes": "合成价格发布目录，缺项不表示零报价。"
+  }
+}
